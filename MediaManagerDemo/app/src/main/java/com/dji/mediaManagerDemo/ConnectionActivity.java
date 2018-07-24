@@ -43,10 +43,11 @@ public class ConnectionActivity extends Activity implements View.OnClickListener
 
     private TextView mTextConnectionStatus;
     private TextView mTextProduct;
-    //private TextView mTextModelAvailable;
-    //private TextView mVersionTv;
-
+    private TextView mTextModelAvailable;
+    private TextView mVersionTv;
     private Button mBtnOpen;
+    private Button mBtnMenu;
+
     private static final String[] REQUIRED_PERMISSION_LIST = new String[]{
         Manifest.permission.VIBRATE,
         Manifest.permission.INTERNET,
@@ -69,6 +70,7 @@ public class ConnectionActivity extends Activity implements View.OnClickListener
     private KeyListener firmwareVersionUpdater;
     private boolean hasStartedFirmVersionListener = false;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,10 +82,11 @@ public class ConnectionActivity extends Activity implements View.OnClickListener
         IntentFilter filter = new IntentFilter();
         filter.addAction(DemoApplication.FLAG_CONNECTION_CHANGE);
         registerReceiver(mReceiver, filter);
+
     }
 
     /**
-     * Checks if there is any missing permissions, and
+     * Cheks if there is any missing permissions, and
      * requests runtime permission if needed.
      */
     private void checkAndRequestPermissions() {
@@ -193,12 +196,15 @@ public class ConnectionActivity extends Activity implements View.OnClickListener
         //mTextModelAvailable = (TextView) findViewById(R.id.text_model_available);
         mTextProduct = (TextView) findViewById(R.id.text_product_info);
 
-        //mVersionTv = (TextView) findViewById(R.id.textView2);
-        //.setText(getResources().getString(R.string.sdk_version, DJISDKManager.getInstance().getSDKVersion()));
+        // mVersionTv = (TextView) findViewById(R.id.textView2);
+        //mVersionTv.setText(getResources().getString(R.string.sdk_version, DJISDKManager.getInstance().getSDKVersion()));
 
         mBtnOpen = (Button) findViewById(R.id.btn_open);
         mBtnOpen.setOnClickListener(this);
         mBtnOpen.setEnabled(false);
+        mBtnMenu = (Button) findViewById(R.id.btn_menu);
+        mBtnMenu.setOnClickListener(this);
+        mBtnMenu.setEnabled(false);
 
     }
 
@@ -245,18 +251,19 @@ public class ConnectionActivity extends Activity implements View.OnClickListener
         if (DemoApplication.getProductInstance() != null) {
             version = DemoApplication.getProductInstance().getFirmwarePackageVersion();
         }
-        /*
+
         if (TextUtils.isEmpty(version)) {
             mTextModelAvailable.setText("Firmware version:N/A"); //Firmware version:
         } else {
             mTextModelAvailable.setText("Firmware version:"+version); //"Firmware version: " +
             removeFirmwareVersionListener();
         }
-        */
     }
 
     @Override
     public void onClick(View v) {
+
+
         switch (v.getId()) {
 
             case R.id.btn_open: {
@@ -264,10 +271,16 @@ public class ConnectionActivity extends Activity implements View.OnClickListener
                 startActivity(intent);
                 break;
             }
+            case R.id.btn_menu: {
+                Intent intent = new Intent(this, ConnectionActivity.class);
+                startActivity(intent);
+                break;
+            }
             default:
                 break;
         }
     }
+
 
     private void refreshSDKRelativeUI() {
         BaseProduct mProduct = DemoApplication.getProductInstance();
