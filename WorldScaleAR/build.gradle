@@ -21,36 +21,35 @@ allprojects {
 apply plugin: 'com.android.application'
 
 dependencies {
-	compile fileTree(dir: 'libs', include: ['*.jar'])
+	compile fileTree(include: ['*.jar'], dir: 'libs')
 	androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
 		exclude group: 'com.android.support', module: 'support-annotations'
 	})
-	compile(name: 'animated-vector-drawable-25.1.0', ext:'aar')
-	compile(name: 'appcompat-v7-25.1.0', ext:'aar')
-	compile(name: 'arcore_client', ext:'aar')
-	compile(name: 'com.mapbox.android.unity-debug', ext:'aar')
-	compile(name: 'google_ar_required', ext:'aar')
-	compile(name: 'mapbox-android-telemetry-2-1-0', ext:'aar')
-	compile(name: 'support-compat-25.1.0', ext:'aar')
-	compile(name: 'support-core-ui-25.1.0', ext:'aar')
-	compile(name: 'support-core-utils-25.1.0', ext:'aar')
-	compile(name: 'support-media-compat-25.1.0', ext:'aar')
-	compile(name: 'support-v4-25.1.0', ext:'aar')
-	compile(name: 'support-vector-drawable-25.1.0', ext:'aar')
-	compile(name: 'unityandroidpermissions', ext:'aar')
-	compile(name: 'unitygar', ext:'aar')
+	compile(name: 'animated-vector-drawable-25.1.0', ext: 'aar')
+	compile(name: 'appcompat-v7-25.1.0', ext: 'aar')
+	compile(name: 'arcore_client', ext: 'aar')
+	compile(name: 'com.mapbox.android.unity-debug', ext: 'aar')
+	compile(name: 'google_ar_required', ext: 'aar')
+	compile(name: 'mapbox-android-telemetry-2-1-0', ext: 'aar')
+	compile(name: 'support-compat-25.1.0', ext: 'aar')
+	compile(name: 'support-core-ui-25.1.0', ext: 'aar')
+	compile(name: 'support-core-utils-25.1.0', ext: 'aar')
+	compile(name: 'support-media-compat-25.1.0', ext: 'aar')
+	compile(name: 'support-v4-25.1.0', ext: 'aar')
+	compile(name: 'support-vector-drawable-25.1.0', ext: 'aar')
+	compile(name: 'unityandroidpermissions', ext: 'aar')
+	compile(name: 'unitygar', ext: 'aar')
 	compile 'com.android.support:design:25.1.1'
 	compile 'com.android.support.constraint:constraint-layout:1.0.2'
 	compile 'com.android.support:multidex:1.0.1'
 	testCompile 'junit:junit:4.12'
-
 	compile 'com.dji:dji-uxsdk:4.5.1'
-	provided ('com.dji:dji-sdk-provided:4.5.1')
+	provided 'com.dji:dji-sdk-provided:4.5.1'
 }
 
 android {
 	compileSdkVersion 28
-	buildToolsVersion '28.0.0'
+	buildToolsVersion '27.0.3'
 
 	defaultConfig {
 		minSdkVersion	24

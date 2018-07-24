@@ -21,7 +21,7 @@
   <uses-feature android:name="android.hardware.usb.host" android:required="false" />
   <uses-feature android:name="android.hardware.usb.accessory" android:required="true" />
   <!-- Permissions and features -->
-  <application android:name="com.Company.WorldScaleAR.MApplication" android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme" tools:replace="android:icon" android:isGame="true" android:banner="@drawable/app_banner">
+  <application android:name="com.Company.WorldScaleAR.MApplication" android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme" tools:replace="android:icon" android:isGame="true" android:banner="@+drawable/app_banner">
     <!-- DJI SDK -->
     <uses-library android:name="com.android.future.usb.accessory" />
     <meta-data android:name="com.dji.sdk.API_KEY" android:value="490651b84542a4d55cc98d0b" />

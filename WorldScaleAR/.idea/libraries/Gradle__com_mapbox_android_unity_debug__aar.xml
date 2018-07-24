@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.mapbox.android.unity-debug:@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.android/build-cache/6951cde005af62f48bc6d7311c226bc60dc58366/output/res" />
-      <root url="jar://$USER_HOME$/.android/build-cache/6951cde005af62f48bc6d7311c226bc60dc58366/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/b7c835160ce20eef4d76cdf9982360b053fcdb7c/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/b7c835160ce20eef4d76cdf9982360b053fcdb7c/output/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
