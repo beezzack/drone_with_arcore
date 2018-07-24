@@ -1,0 +1,527 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:2:1-62:12
+	package
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:2:117-151
+		INJECTED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml
+		INJECTED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml
+		INJECTED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:2:70-116
+	xmlns:android
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml
+		INJECTED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml
+	android:installLocation
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:2:152-192
+uses-permission#android.permission.BLUETOOTH
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:4:3-66
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:11:5-68
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:4:20-63
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:5:3-72
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:12:5-74
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:5:20-69
+uses-permission#android.permission.VIBRATE
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:6:3-64
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:35:5-66
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:6:20-61
+uses-permission#android.permission.INTERNET
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:7:3-65
+MERGED from [:mapbox-android-telemetry-2-1-0:] C:\Users\§õ¶§ª@\.android\build-cache\19be68236465bc7fb6411e6def7b81231a24be8c\output\AndroidManifest.xml:16:5-67
+MERGED from [com.google.android.gms:play-services-maps:9.4.0] C:\Users\§õ¶§ª@\.android\build-cache\8ecf4b15c1add7a14f9870e12eaebaf838856d21\output\AndroidManifest.xml:21:5-66
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:7:20-62
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:8:3-74
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:21:5-76
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:8:20-71
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:9:3-66
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:20:5-68
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:9:20-63
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:10:3-79
+MERGED from [:com.mapbox.android.unity-debug:] C:\Users\§õ¶§ª@\.android\build-cache\6951cde005af62f48bc6d7311c226bc60dc58366\output\AndroidManifest.xml:12:5-81
+MERGED from [:mapbox-android-telemetry-2-1-0:] C:\Users\§õ¶§ª@\.android\build-cache\19be68236465bc7fb6411e6def7b81231a24be8c\output\AndroidManifest.xml:18:5-80
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:17:5-81
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:10:20-76
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:11:3-77
+MERGED from [:mapbox-android-telemetry-2-1-0:] C:\Users\§õ¶§ª@\.android\build-cache\19be68236465bc7fb6411e6def7b81231a24be8c\output\AndroidManifest.xml:19:5-78
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:13:5-79
+MERGED from [com.google.android.gms:play-services-maps:9.4.0] C:\Users\§õ¶§ª@\.android\build-cache\8ecf4b15c1add7a14f9870e12eaebaf838856d21\output\AndroidManifest.xml:20:5-78
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:11:20-74
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:12:3-77
+MERGED from [:com.mapbox.android.unity-debug:] C:\Users\§õ¶§ª@\.android\build-cache\6951cde005af62f48bc6d7311c226bc60dc58366\output\AndroidManifest.xml:11:5-79
+MERGED from [:mapbox-android-telemetry-2-1-0:] C:\Users\§õ¶§ª@\.android\build-cache\19be68236465bc7fb6411e6def7b81231a24be8c\output\AndroidManifest.xml:17:5-79
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:18:5-79
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:12:20-74
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:13:3-74
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:39:5-76
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:13:20-71
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:14:3-82
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:26:5-84
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:14:20-79
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:15:3-79
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:15:5-81
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:15:20-76
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:16:3-78
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:16:20-75
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:17:3-76
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:23:5-78
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:17:20-73
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:18:3-73
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:40:5-75
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:18:20-70
+uses-feature#android.hardware.camera
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:19:3-58
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:19:17-55
+uses-feature#android.hardware.camera.autofocus
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:20:3-68
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:20:17-65
+uses-feature#android.hardware.usb.host
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:21:3-85
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:53:5-55:36
+	android:required
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:21:58-82
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:21:17-57
+uses-feature#android.hardware.usb.accessory
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:22:3-89
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:56:5-58:35
+	android:required
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:22:63-86
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:22:17-62
+application
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:24:3-54:17
+MERGED from [:animated-vector-drawable-25.1.0:] C:\Users\§õ¶§ª@\.android\build-cache\04f2fefff515568b094bef85f1f2aee60e8aa690\output\AndroidManifest.xml:22:5-20
+MERGED from [:appcompat-v7-25.1.0:] C:\Users\§õ¶§ª@\.android\build-cache\e9e76807c189915ccc7b30ef29e3ba4ca8c3372c\output\AndroidManifest.xml:25:5-20
+MERGED from [:arcore_client:] C:\Users\§õ¶§ª@\.android\build-cache\0a7db8eea244d14fb8639cffb3bda545273c6471\output\AndroidManifest.xml:30:5-44:19
+MERGED from [:google_ar_required:] C:\Users\§õ¶§ª@\.android\build-cache\5b7728a3a426912a399d75dc929338b7ba98dbcf\output\AndroidManifest.xml:7:5-9:19
+MERGED from [:mapbox-android-telemetry-2-1-0:] C:\Users\§õ¶§ª@\.android\build-cache\19be68236465bc7fb6411e6def7b81231a24be8c\output\AndroidManifest.xml:12:5-14:19
+MERGED from [:support-compat-25.1.0:] C:\Users\§õ¶§ª@\.android\build-cache\347cdcc28f4c7d439c37bed50796f4154fd7176f\output\AndroidManifest.xml:25:5-20
+MERGED from [:support-core-ui-25.1.0:] C:\Users\§õ¶§ª@\.android\build-cache\3466dfdd43459a61ed64888fa2fabf89d258052a\output\AndroidManifest.xml:25:5-20
+MERGED from [:support-core-utils-25.1.0:] C:\Users\§õ¶§ª@\.android\build-cache\ce78d2b646dcc258bd800f89b1212a327b82d8aa\output\AndroidManifest.xml:25:5-20
+MERGED from [:support-media-compat-25.1.0:] C:\Users\§õ¶§ª@\.android\build-cache\1b903cc725015226c79e9a2b566958ef56136cef\output\AndroidManifest.xml:25:5-20
+MERGED from [:support-v4-25.1.0:] C:\Users\§õ¶§ª@\.android\build-cache\0d6df22bb52284d1cfd540e02236f12b9acc1f0d\output\AndroidManifest.xml:25:5-20
+MERGED from [:support-vector-drawable-25.1.0:] C:\Users\§õ¶§ª@\.android\build-cache\c15a43d47a75dda65518a288c1666f131e55beb3\output\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:design:25.1.1] C:\Users\§õ¶§ª@\.android\build-cache\ddde76c1815edd38b11f2b0da6f5eaf8c02ea7f4\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:transition:25.1.1] C:\Users\§õ¶§ª@\.android\build-cache\d98e30c4ccc41de6a21bf0705e31cbee55588d39\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\§õ¶§ª@\.android\build-cache\b61de1baafc20448cd6c8d6c76e585f12ebd3d35\output\AndroidManifest.xml:9:5-20
+MERGED from [com.dji:dji-uxsdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\399b144c454f56015ace90051e33439489df6490\output\AndroidManifest.xml:11:5-12:19
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:60:5-73:19
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\§õ¶§ª@\.android\build-cache\41281cb556e7214d3dcf959e9859ca172875f49d\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\§õ¶§ª@\.android\build-cache\ae6a2c17b16f9e7b495ec596b223e9337f82aa78\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\§õ¶§ª@\.android\build-cache\65a04ec7ba5b16996df89b5145f1915a86a08620\output\AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-location:9.4.0] C:\Users\§õ¶§ª@\.android\build-cache\dbd92232eba776beeb0b06a984384adb9a3847f7\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-places:9.4.0] C:\Users\§õ¶§ª@\.android\build-cache\59442a7191dfc0c42bb1bab4f1e3b7a0593bdd70\output\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-maps:9.4.0] C:\Users\§õ¶§ª@\.android\build-cache\8ecf4b15c1add7a14f9870e12eaebaf838856d21\output\AndroidManifest.xml:27:5-20
+MERGED from [com.google.android.gms:play-services-base:9.4.0] C:\Users\§õ¶§ª@\.android\build-cache\656d3d62b6f4cbc35f06abd609e349cbb7bd64d9\output\AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-tasks:9.4.0] C:\Users\§õ¶§ª@\.android\build-cache\c60a27cf480d4c1e5bb132ba2adaa19e38b17b76\output\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:9.4.0] C:\Users\§õ¶§ª@\.android\build-cache\a574d745bff26612755404486fde6e14bdb679a5\output\AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\§õ¶§ª@\.android\build-cache\3e1b4197c8adb6dc1aec6ed249d220a84372e716\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\§õ¶§ª@\.android\build-cache\ff3589fe7e4878a7b65f5fe46b637057dc18b863\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\§õ¶§ª@\.android\build-cache\7fc7d2d938f36c2d14a3b36461f99ee1e5901e87\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\§õ¶§ª@\.android\build-cache\108f626b296c94cd49993d703039e346de89b0c1\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\§õ¶§ª@\.android\build-cache\b878bd3a4d00ecc09c5b5b7a923cc6a0aee2e060\output\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\§õ¶§ª@\.android\build-cache\b704581ab81caf8aed8059a7815aee92ca19679d\output\AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:24:131-163
+	android:supportsRtl
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:24:210-236
+	android:roundIcon
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:24:164-209
+	android:allowBackup
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:24:69-95
+	android:icon
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:24:96-130
+	android:banner
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:24:320-357
+	android:theme
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:24:237-268
+	android:isGame
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:24:298-319
+	tools:replace
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:24:269-297
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:24:16-68
+uses-library#com.android.future.usb.accessory
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:26:5-69
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:26:19-66
+meta-data#com.dji.sdk.API_KEY
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:27:5-94
+	android:value
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:27:51-91
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:27:16-50
+activity#com.Company.WorldScaleAR.ConnectionActivity
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:29:5-39:16
+	android:screenOrientation
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:29:141-177
+	android:launchMode
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:29:110-140
+	android:configChanges
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:29:74-109
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:29:15-73
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER+android.intent.category.LEANBACK_LAUNCHER
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:30:7-34:23
+action#android.intent.action.MAIN
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:31:9-61
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:31:17-58
+category#android.intent.category.LAUNCHER
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:32:9-69
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:32:19-66
+category#android.intent.category.LEANBACK_LAUNCHER
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:33:9-78
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:33:19-75
+intent-filter#android.hardware.usb.action.USB_ACCESSORY_ATTACHED
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:35:7-37:23
+action#android.hardware.usb.action.USB_ACCESSORY_ATTACHED
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:36:9-85
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:36:17-82
+meta-data#android.hardware.usb.action.USB_ACCESSORY_ATTACHED
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:38:7-127
+	android:resource
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:38:84-124
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:38:18-83
+activity#com.Company.WorldScaleAR.DefaultLayoutActivity
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:40:5-41:16
+	android:screenOrientation
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:40:113-150
+	android:configChanges
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:40:77-112
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:40:15-76
+activity#com.Company.WorldScaleAR.MainActivity
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:42:5-43:16
+	android:screenOrientation
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:42:68-105
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:42:15-67
+activity#com.Company.WorldScaleAR.UnityPlayerActivity
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:44:5-48:16
+	android:screenOrientation
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:44:48-86
+	android:label
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:44:15-47
+	android:launchMode
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:44:87-118
+	android:configChanges
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:45:9-190
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:46:9-68
+meta-data#unityplayer.UnityActivity
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:47:7-82
+	android:value
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:47:59-79
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:47:18-58
+meta-data#unity.tango-enable
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:49:5-73
+	android:value
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:49:50-70
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:49:16-49
+meta-data#unityplayer.SkipPermissionsDialog
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:50:5-88
+	android:value
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:50:65-85
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:50:16-64
+meta-data#unity.build-id
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:51:5-101
+	android:value
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:51:46-98
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:51:16-45
+meta-data#unity.splash-mode
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:52:5-69
+	android:value
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:52:49-66
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:52:16-48
+meta-data#unity.splash-enable
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:53:5-74
+	android:value
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:53:51-71
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:53:16-50
+uses-feature#0x00020000
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:55:3-52
+MERGED from [com.google.android.gms:play-services-maps:9.4.0] C:\Users\§õ¶§ª@\.android\build-cache\8ecf4b15c1add7a14f9870e12eaebaf838856d21\output\AndroidManifest.xml:22:5-24:33
+	android:glEsVersion
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:55:17-49
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:9.4.0] C:\Users\§õ¶§ª@\.android\build-cache\8ecf4b15c1add7a14f9870e12eaebaf838856d21\output\AndroidManifest.xml:24:8-31
+uses-permission#android.permission.CAMERA
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:56:3-63
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:25:5-65
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:56:20-60
+uses-feature#android.hardware.location.gps
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:57:3-89
+MERGED from [:com.mapbox.android.unity-debug:] C:\Users\§õ¶§ª@\.android\build-cache\6951cde005af62f48bc6d7311c226bc60dc58366\output\AndroidManifest.xml:14:5-16:35
+	android:required
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:57:62-86
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:57:17-61
+uses-feature#android.hardware.location
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:58:3-85
+	android:required
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:58:58-82
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:58:17-57
+uses-feature#android.hardware.touchscreen
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:59:3-88
+	android:required
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:59:61-85
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:59:17-60
+uses-feature#android.hardware.touchscreen.multitouch
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:60:3-99
+	android:required
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:60:72-96
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:60:17-71
+uses-feature#android.hardware.touchscreen.multitouch.distinct
+ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:61:3-108
+	android:required
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:61:81-105
+	android:name
+		ADDED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml:61:17-80
+uses-sdk
+INJECTED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [:animated-vector-drawable-25.1.0:] C:\Users\§õ¶§ª@\.android\build-cache\04f2fefff515568b094bef85f1f2aee60e8aa690\output\AndroidManifest.xml:20:5-44
+MERGED from [:appcompat-v7-25.1.0:] C:\Users\§õ¶§ª@\.android\build-cache\e9e76807c189915ccc7b30ef29e3ba4ca8c3372c\output\AndroidManifest.xml:21:5-23:78
+MERGED from [:arcore_client:] C:\Users\§õ¶§ª@\.android\build-cache\0a7db8eea244d14fb8639cffb3bda545273c6471\output\AndroidManifest.xml:26:5-28:41
+MERGED from [:com.mapbox.android.unity-debug:] C:\Users\§õ¶§ª@\.android\build-cache\6951cde005af62f48bc6d7311c226bc60dc58366\output\AndroidManifest.xml:7:5-9:41
+MERGED from [:google_ar_required:] C:\Users\§õ¶§ª@\.android\build-cache\5b7728a3a426912a399d75dc929338b7ba98dbcf\output\AndroidManifest.xml:6:5-43
+MERGED from [:mapbox-android-telemetry-2-1-0:] C:\Users\§õ¶§ª@\.android\build-cache\19be68236465bc7fb6411e6def7b81231a24be8c\output\AndroidManifest.xml:8:5-10:41
+MERGED from [:support-compat-25.1.0:] C:\Users\§õ¶§ª@\.android\build-cache\347cdcc28f4c7d439c37bed50796f4154fd7176f\output\AndroidManifest.xml:21:5-23:58
+MERGED from [:support-core-ui-25.1.0:] C:\Users\§õ¶§ª@\.android\build-cache\3466dfdd43459a61ed64888fa2fabf89d258052a\output\AndroidManifest.xml:21:5-23:58
+MERGED from [:support-core-utils-25.1.0:] C:\Users\§õ¶§ª@\.android\build-cache\ce78d2b646dcc258bd800f89b1212a327b82d8aa\output\AndroidManifest.xml:21:5-23:61
+MERGED from [:support-media-compat-25.1.0:] C:\Users\§õ¶§ª@\.android\build-cache\1b903cc725015226c79e9a2b566958ef56136cef\output\AndroidManifest.xml:21:5-23:63
+MERGED from [:support-v4-25.1.0:] C:\Users\§õ¶§ª@\.android\build-cache\0d6df22bb52284d1cfd540e02236f12b9acc1f0d\output\AndroidManifest.xml:21:5-23:54
+MERGED from [:support-vector-drawable-25.1.0:] C:\Users\§õ¶§ª@\.android\build-cache\c15a43d47a75dda65518a288c1666f131e55beb3\output\AndroidManifest.xml:21:5-43
+MERGED from [:unityandroidpermissions:] C:\Users\§õ¶§ª@\.android\build-cache\e24478d6fed3d1d65b42491e137dd68c920e4675\output\AndroidManifest.xml:11:5-13:41
+MERGED from [:unitygar:] C:\Users\§õ¶§ª@\.android\build-cache\a12817df99d4456aa6521d990f6744bf0ad24c1d\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:25.1.1] C:\Users\§õ¶§ª@\.android\build-cache\ddde76c1815edd38b11f2b0da6f5eaf8c02ea7f4\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:transition:25.1.1] C:\Users\§õ¶§ª@\.android\build-cache\d98e30c4ccc41de6a21bf0705e31cbee55588d39\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\§õ¶§ª@\.android\build-cache\b61de1baafc20448cd6c8d6c76e585f12ebd3d35\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:multidex:1.0.1] C:\Users\§õ¶§ª@\.android\build-cache\d63d5ee783250a8c24e72a59744241a0592aecde\output\AndroidManifest.xml:18:5-42
+MERGED from [com.dji:dji-uxsdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\399b144c454f56015ace90051e33439489df6490\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\§õ¶§ª@\.android\build-cache\da6b3c3437992a114954d5cf2c944877a23d8252\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\§õ¶§ª@\.android\build-cache\41281cb556e7214d3dcf959e9859ca172875f49d\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\§õ¶§ª@\.android\build-cache\ae6a2c17b16f9e7b495ec596b223e9337f82aa78\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\§õ¶§ª@\.android\build-cache\65a04ec7ba5b16996df89b5145f1915a86a08620\output\AndroidManifest.xml:20:5-43
+MERGED from [com.google.android.gms:play-services-location:9.4.0] C:\Users\§õ¶§ª@\.android\build-cache\dbd92232eba776beeb0b06a984384adb9a3847f7\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-places:9.4.0] C:\Users\§õ¶§ª@\.android\build-cache\59442a7191dfc0c42bb1bab4f1e3b7a0593bdd70\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-maps:9.4.0] C:\Users\§õ¶§ª@\.android\build-cache\8ecf4b15c1add7a14f9870e12eaebaf838856d21\output\AndroidManifest.xml:26:5-42
+MERGED from [com.google.android.gms:play-services-base:9.4.0] C:\Users\§õ¶§ª@\.android\build-cache\656d3d62b6f4cbc35f06abd609e349cbb7bd64d9\output\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-tasks:9.4.0] C:\Users\§õ¶§ª@\.android\build-cache\c60a27cf480d4c1e5bb132ba2adaa19e38b17b76\output\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:9.4.0] C:\Users\§õ¶§ª@\.android\build-cache\a574d745bff26612755404486fde6e14bdb679a5\output\AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\§õ¶§ª@\.android\build-cache\3e1b4197c8adb6dc1aec6ed249d220a84372e716\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\§õ¶§ª@\.android\build-cache\ff3589fe7e4878a7b65f5fe46b637057dc18b863\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\§õ¶§ª@\.android\build-cache\7fc7d2d938f36c2d14a3b36461f99ee1e5901e87\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\§õ¶§ª@\.android\build-cache\108f626b296c94cd49993d703039e346de89b0c1\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\§õ¶§ª@\.android\build-cache\b878bd3a4d00ecc09c5b5b7a923cc6a0aee2e060\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\§õ¶§ª@\.android\build-cache\b704581ab81caf8aed8059a7815aee92ca19679d\output\AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [:appcompat-v7-25.1.0:] C:\Users\§õ¶§ª@\.android\build-cache\e9e76807c189915ccc7b30ef29e3ba4ca8c3372c\output\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml
+		INJECTED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml
+		INJECTED from D:\WorldScaleAR\WorldScaleAR\src\main\AndroidManifest.xml
+activity#com.google.ar.core.InstallActivity
+ADDED from [:arcore_client:] C:\Users\§õ¶§ª@\.android\build-cache\0a7db8eea244d14fb8639cffb3bda545273c6471\output\AndroidManifest.xml:33:9-39:80
+	android:excludeFromRecents
+		ADDED from [:arcore_client:] C:\Users\§õ¶§ª@\.android\build-cache\0a7db8eea244d14fb8639cffb3bda545273c6471\output\AndroidManifest.xml:36:13-46
+	android:launchMode
+		ADDED from [:arcore_client:] C:\Users\§õ¶§ª@\.android\build-cache\0a7db8eea244d14fb8639cffb3bda545273c6471\output\AndroidManifest.xml:38:13-43
+	android:exported
+		ADDED from [:arcore_client:] C:\Users\§õ¶§ª@\.android\build-cache\0a7db8eea244d14fb8639cffb3bda545273c6471\output\AndroidManifest.xml:37:13-37
+	android:configChanges
+		ADDED from [:arcore_client:] C:\Users\§õ¶§ª@\.android\build-cache\0a7db8eea244d14fb8639cffb3bda545273c6471\output\AndroidManifest.xml:35:13-74
+	android:theme
+		ADDED from [:arcore_client:] C:\Users\§õ¶§ª@\.android\build-cache\0a7db8eea244d14fb8639cffb3bda545273c6471\output\AndroidManifest.xml:39:13-77
+	android:name
+		ADDED from [:arcore_client:] C:\Users\§õ¶§ª@\.android\build-cache\0a7db8eea244d14fb8639cffb3bda545273c6471\output\AndroidManifest.xml:34:13-62
+meta-data#com.google.ar.core.min_apk_version
+ADDED from [:arcore_client:] C:\Users\§õ¶§ª@\.android\build-cache\0a7db8eea244d14fb8639cffb3bda545273c6471\output\AndroidManifest.xml:41:9-43:41
+	android:value
+		ADDED from [:arcore_client:] C:\Users\§õ¶§ª@\.android\build-cache\0a7db8eea244d14fb8639cffb3bda545273c6471\output\AndroidManifest.xml:43:13-38
+	android:name
+		ADDED from [:arcore_client:] C:\Users\§õ¶§ª@\.android\build-cache\0a7db8eea244d14fb8639cffb3bda545273c6471\output\AndroidManifest.xml:42:13-62
+meta-data#com.google.ar.core
+ADDED from [:google_ar_required:] C:\Users\§õ¶§ª@\.android\build-cache\5b7728a3a426912a399d75dc929338b7ba98dbcf\output\AndroidManifest.xml:8:9-81
+	android:value
+		ADDED from [:google_ar_required:] C:\Users\§õ¶§ª@\.android\build-cache\5b7728a3a426912a399d75dc929338b7ba98dbcf\output\AndroidManifest.xml:8:54-78
+	android:name
+		ADDED from [:google_ar_required:] C:\Users\§õ¶§ª@\.android\build-cache\5b7728a3a426912a399d75dc929338b7ba98dbcf\output\AndroidManifest.xml:8:20-53
+uses-feature#android.hardware.camera.ar
+ADDED from [:google_ar_required:] C:\Users\§õ¶§ª@\.android\build-cache\5b7728a3a426912a399d75dc929338b7ba98dbcf\output\AndroidManifest.xml:10:5-86
+	android:required
+		ADDED from [:google_ar_required:] C:\Users\§õ¶§ª@\.android\build-cache\5b7728a3a426912a399d75dc929338b7ba98dbcf\output\AndroidManifest.xml:10:61-84
+	android:name
+		ADDED from [:google_ar_required:] C:\Users\§õ¶§ª@\.android\build-cache\5b7728a3a426912a399d75dc929338b7ba98dbcf\output\AndroidManifest.xml:10:19-60
+service#com.mapbox.services.android.telemetry.service.TelemetryService
+ADDED from [:mapbox-android-telemetry-2-1-0:] C:\Users\§õ¶§ª@\.android\build-cache\19be68236465bc7fb6411e6def7b81231a24be8c\output\AndroidManifest.xml:13:9-97
+	android:name
+		ADDED from [:mapbox-android-telemetry-2-1-0:] C:\Users\§õ¶§ª@\.android\build-cache\19be68236465bc7fb6411e6def7b81231a24be8c\output\AndroidManifest.xml:13:18-95
+uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:14:5-98
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:14:22-95
+uses-permission#android.permission.WRITE_USER_DICTIONARY
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:16:5-80
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:16:22-77
+uses-permission#android.permission.CHANGE_CONFIGURATION
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:19:5-79
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:19:22-76
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:22:22-76
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:24:5-71
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:24:22-68
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:29:5-81
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:29:22-78
+uses-permission#android.permission.BROADCAST_STICKY
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:30:5-75
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:30:22-72
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:31:5-73
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:31:22-70
+uses-permission#android.permission.RECEIVE_USER_PRESENT
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:32:5-79
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:32:22-76
+uses-permission#android.permission.KILL_BACKGROUND_PROCESSES
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:33:5-84
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:33:22-81
+uses-permission#android.permission.READ_LOGS
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:34:5-68
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:34:22-65
+uses-permission#android.permission.GET_TASKS
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:38:5-68
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:38:22-65
+uses-permission#android.permission.MANAGE_ACCOUNTS
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:41:5-74
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:41:22-71
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:42:5-71
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:42:22-68
+uses-permission#android.permission.RAISED_THREAD_PRIORITY
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:43:5-81
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:43:22-78
+uses-permission#android.permission.INTERACT_ACROSS_USERS_FULL
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:44:5-85
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:44:22-82
+uses-permission#android.permission.USE_CREDENTIALS
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:50:5-74
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:50:22-71
+service#dji.sdk.sdkmanager.DJIGlobalService
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:61:9-63:43
+	android:stopWithTask
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:63:13-40
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:62:13-63
+receiver#dji.logic.receiver.DJIPilotStartupReceiver
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:65:9-72:20
+	android:exported
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:67:13-36
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:66:13-70
+intent-filter#dji.go3.STARTUP+dji.go4.STARTUP
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:68:13-71:29
+action#dji.go3.STARTUP
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:69:17-58
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:69:25-55
+action#dji.go4.STARTUP
+ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:70:17-58
+	android:name
+		ADDED from [com.dji:dji-sdk:4.5.1] C:\Users\§õ¶§ª@\.android\build-cache\9f9ccd3f101a4cfcf431d67e2c6ba7237544d6a3\output\AndroidManifest.xml:70:25-55
+meta-data#android.support.VERSION
+ADDED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\§õ¶§ª@\.android\build-cache\da6b3c3437992a114954d5cf2c944877a23d8252\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\§õ¶§ª@\.android\build-cache\41281cb556e7214d3dcf959e9859ca172875f49d\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\§õ¶§ª@\.android\build-cache\ae6a2c17b16f9e7b495ec596b223e9337f82aa78\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\§õ¶§ª@\.android\build-cache\65a04ec7ba5b16996df89b5145f1915a86a08620\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\§õ¶§ª@\.android\build-cache\3e1b4197c8adb6dc1aec6ed249d220a84372e716\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\§õ¶§ª@\.android\build-cache\ff3589fe7e4878a7b65f5fe46b637057dc18b863\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\§õ¶§ª@\.android\build-cache\7fc7d2d938f36c2d14a3b36461f99ee1e5901e87\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\§õ¶§ª@\.android\build-cache\108f626b296c94cd49993d703039e346de89b0c1\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\§õ¶§ª@\.android\build-cache\b878bd3a4d00ecc09c5b5b7a923cc6a0aee2e060\output\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\§õ¶§ª@\.android\build-cache\b704581ab81caf8aed8059a7815aee92ca19679d\output\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\§õ¶§ª@\.android\build-cache\da6b3c3437992a114954d5cf2c944877a23d8252\output\AndroidManifest.xml:24:9-31
+	android:name
+		ADDED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\§õ¶§ª@\.android\build-cache\da6b3c3437992a114954d5cf2c944877a23d8252\output\AndroidManifest.xml:23:9-47
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:9.4.0] C:\Users\§õ¶§ª@\.android\build-cache\656d3d62b6f4cbc35f06abd609e349cbb7bd64d9\output\AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:9.4.0] C:\Users\§õ¶§ª@\.android\build-cache\656d3d62b6f4cbc35f06abd609e349cbb7bd64d9\output\AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:9.4.0] C:\Users\§õ¶§ª@\.android\build-cache\656d3d62b6f4cbc35f06abd609e349cbb7bd64d9\output\AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:9.4.0] C:\Users\§õ¶§ª@\.android\build-cache\656d3d62b6f4cbc35f06abd609e349cbb7bd64d9\output\AndroidManifest.xml:20:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:9.4.0] C:\Users\§õ¶§ª@\.android\build-cache\a574d745bff26612755404486fde6e14bdb679a5\output\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:9.4.0] C:\Users\§õ¶§ª@\.android\build-cache\a574d745bff26612755404486fde6e14bdb679a5\output\AndroidManifest.xml:23:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:9.4.0] C:\Users\§õ¶§ª@\.android\build-cache\a574d745bff26612755404486fde6e14bdb679a5\output\AndroidManifest.xml:22:13-58

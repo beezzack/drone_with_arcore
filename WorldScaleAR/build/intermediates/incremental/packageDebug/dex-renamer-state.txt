@@ -1,0 +1,7 @@
+#Tue Jul 24 11:27:03 CST 2018
+base.0=D\:\\WorldScaleAR\\WorldScaleAR\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_6eb299a1e9ed8d4ef240c4cfa82b44cb0ddc6df0
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=D\:\\WorldScaleAR\\WorldScaleAR\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_23ab37d29e42023832d977cba5d87c2fbb483297\\classes.dex
+base.1=D\:\\WorldScaleAR\\WorldScaleAR\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_23ab37d29e42023832d977cba5d87c2fbb483297
+file.0=D\:\\WorldScaleAR\\WorldScaleAR\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_6eb299a1e9ed8d4ef240c4cfa82b44cb0ddc6df0\\classes.dex

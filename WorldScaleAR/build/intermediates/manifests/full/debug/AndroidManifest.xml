@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.Company.WorldScaleAR"
+    android:installLocation="preferExternal"
+    android:versionCode="1"
+    android:versionName="0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="28" />
+    <!-- Permissions and features -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.usb.accessory"
+        android:required="true" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.ar"
+        android:required="true" />
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_USER_DICTIONARY" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- video editor -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.READ_LOGS" /> <!-- share permission start -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.RAISED_THREAD_PRIORITY" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" /> <!-- share permission end -->
+    <!-- livestreaming permission start -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <meta-data
+        android:name="android.support.VERSION"
+        android:value="25.3.1" /> <!-- Permissions and features -->
+    <application
+        android:name="com.Company.WorldScaleAR.MApplication"
+        android:allowBackup="true"
+        android:banner="@drawable/app_banner"
+        android:icon="@mipmap/ic_launcher"
+        android:isGame="true"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+
+        <!-- DJI SDK -->
+        <uses-library android:name="com.android.future.usb.accessory" />
+
+        <meta-data
+            android:name="com.dji.sdk.API_KEY"
+            android:value="490651b84542a4d55cc98d0b" />
+        <!-- DJI SDK -->
+        <activity
+            android:name="com.Company.WorldScaleAR.ConnectionActivity"
+            android:configChanges="orientation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"
+                android:resource="@xml/accessory_filter" />
+        </activity>
+        <activity
+            android:name="com.Company.WorldScaleAR.DefaultLayoutActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.Company.WorldScaleAR.MainActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.Company.WorldScaleAR.UnityPlayerActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="fullSensor" >
+            <meta-data
+                android:name="unityplayer.UnityActivity"
+                android:value="true" />
+        </activity>
+
+        <meta-data
+            android:name="unity.tango-enable"
+            android:value="True" />
+        <meta-data
+            android:name="unityplayer.SkipPermissionsDialog"
+            android:value="true" />
+        <meta-data
+            android:name="unity.build-id"
+            android:value="15bcc79e-1c79-4ecc-ac9a-cc8241121484" />
+        <meta-data
+            android:name="unity.splash-mode"
+            android:value="0" />
+        <meta-data
+            android:name="unity.splash-enable"
+            android:value="True" />
+        <!-- This activity is critical for installing ARCore when it is not already present. -->
+        <activity
+            android:name="com.google.ar.core.InstallActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Material.Light.Dialog.Alert" /> <!-- The minimal version code of ARCore APK required for an app using this SDK. -->
+        <meta-data
+            android:name="com.google.ar.core.min_apk_version"
+            android:value="180525000" />
+        <meta-data
+            android:name="com.google.ar.core"
+            android:value="required" />
+
+        <service android:name="com.mapbox.services.android.telemetry.service.TelemetryService" />
+        <service
+            android:name="dji.sdk.sdkmanager.DJIGlobalService"
+            android:stopWithTask="true" />
+
+        <receiver
+            android:name="dji.logic.receiver.DJIPilotStartupReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="dji.go3.STARTUP" />
+                <action android:name="dji.go4.STARTUP" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

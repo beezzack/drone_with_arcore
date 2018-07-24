@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#FFFFFFFF"
+    android:fitsSystemWindows="false">
+
+    <FrameLayout
+        android:id="@+id/offline_map_view_head_bar_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/offline_map_head_first_bar"/>
+    </FrameLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/offline_map_divider_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/offline_map_message_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offline_map_dp_50_in_sw320dp"
+        android:padding="@dimen/offline_map_dp_5_in_sw320dp"
+        android:background="@drawable/offline_map_hint_shadow"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/offline_map_message_text"
+            android:layout_width="@dimen/offline_map_dp_320_in_sw320dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/offline_map_hint_no_satellite_map_text_color"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/offline_map_message_iv"
+            android:textSize="12sp"
+            android:text="@string/offline_map_hint_no_satellite_map"/>
+
+        <ImageView
+            android:id="@+id/offline_map_message_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/offline_map_dp_10_in_sw320dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/offline_map_x"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/offline_map_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offline_map_dp_45_in_sw320dp"
+        android:gravity="center">
+        <RelativeLayout
+            android:layout_width="@dimen/offline_map_search_bar_width"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/offline_map_search_frame">
+            <EditText
+                android:id="@+id/offline_map_download_search"
+                android:layout_width="@dimen/offline_map_search_edit_width"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:queryHint="@string/offline_map_search_hint_text"
+                android:textColorHint="#212121"
+                android:imeOptions="flagNoExtractUi|actionDone"
+                android:singleLine="true"
+                android:inputType="text"
+                android:background="@null">
+            </EditText>
+
+
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/offline_map_download_search_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="7dp"
+            android:layout_marginRight="@dimen/offline_map_search_x_margin"
+            android:src="@drawable/offline_map_x"/>
+    </RelativeLayout>
+
+    <com.dji.mapkit.offlinemap.OfflineMapViewPager
+        android:id="@+id/offline_map_content_viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="#FFFFFFFF"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+    <RelativeLayout
+        android:id="@+id/offline_map_storage_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offline_map_dp_30_in_sw320dp"
+        android:background="@color/offline_map_hint_no_enough_space_text_color"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/offline_map_storage_bar_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/offline_map_text_color"
+            android:textSize="12sp"
+            android:text=""/>
+        <ImageView
+            android:id="@+id/offline_map_storage_bar_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/offline_map_dp_10_in_sw320dp"
+            android:visibility="gone"
+            android:src="@drawable/offline_map_x"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/offline_map_manager_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offline_map_dp_40_in_sw320dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@color/offline_map_hint_no_satellite_map_text_color">
+
+        <TextView
+            android:id="@+id/offline_map_all_upgrade"
+            android:padding="@dimen/offline_map_dp_10_in_sw320dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="@string/offline_map_manager_all_upgrade"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/offline_map_all_download"
+            android:padding="@dimen/offline_map_dp_10_in_sw320dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:text="@string/offline_map_manager_all_download"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/offline_map_all_pause"
+            android:padding="@dimen/offline_map_dp_10_in_sw320dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_height="wrap_content"
+            android:text="@string/offline_map_manager_all_pause"/>
+    </LinearLayout>
+</LinearLayout>

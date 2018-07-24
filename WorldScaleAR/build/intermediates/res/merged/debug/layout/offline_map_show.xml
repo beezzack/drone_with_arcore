@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/offline_map_show_ly"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/offline_map_show_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.amap.api.maps.MapView>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp">
+        <Button
+            android:id="@+id/offline_map_compass_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="指南针"/>
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/offline_map_switch_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="切换"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/offline_map_back_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="20dp"
+        android:text="概览"/>
+
+</RelativeLayout>

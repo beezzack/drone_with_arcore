@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "D:\\WorldScaleAR\\WorldScaleAR\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\app_banner.png",
+        "source": "D:\\WorldScaleAR\\WorldScaleAR\\src\\main\\res\\drawable-xhdpi\\app_banner.png"
+    },
+    {
+        "merged": "D:\\WorldScaleAR\\WorldScaleAR\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\back_button_normal.png",
+        "source": "D:\\WorldScaleAR\\WorldScaleAR\\src\\main\\res\\drawable-xhdpi\\back_button_normal.png"
+    },
+    {
+        "merged": "D:\\WorldScaleAR\\WorldScaleAR\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\propeller.png",
+        "source": "D:\\WorldScaleAR\\WorldScaleAR\\src\\main\\res\\drawable-xhdpi\\propeller.png"
+    },
+    {
+        "merged": "D:\\WorldScaleAR\\WorldScaleAR\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\back_button_disable.png",
+        "source": "D:\\WorldScaleAR\\WorldScaleAR\\src\\main\\res\\drawable-xhdpi\\back_button_disable.png"
+    },
+    {
+        "merged": "D:\\WorldScaleAR\\WorldScaleAR\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi\\back_button_press.png",
+        "source": "D:\\WorldScaleAR\\WorldScaleAR\\src\\main\\res\\drawable-xhdpi\\back_button_press.png"
+    }
+]
