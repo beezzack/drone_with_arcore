@@ -5,7 +5,7 @@
       <GradleProjectSettings>
         <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="D:/gradle-4.4.1-all/gradle-4.4.1" />
+        <option name="gradleHome" value="C:\Program Files\Unity\Editor\Data\PlaybackEngines\AndroidPlayer\Tools\gradle" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />

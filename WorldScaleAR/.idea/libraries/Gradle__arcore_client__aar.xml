@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: arcore_client:@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.android/build-cache/0a7db8eea244d14fb8639cffb3bda545273c6471/output/res" />
-      <root url="jar://$USER_HOME$/.android/build-cache/0a7db8eea244d14fb8639cffb3bda545273c6471/output/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/36cd3c7f1917d6f5e75d8b1a376ba2e3c07359f1/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/36cd3c7f1917d6f5e75d8b1a376ba2e3c07359f1/output/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
