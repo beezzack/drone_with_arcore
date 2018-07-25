@@ -20,6 +20,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.unity3d.player.UnityPlayerNativeActivity;
+
 import dji.common.error.DJIError;
 import dji.common.error.DJISDKError;
 import dji.common.useraccount.UserAccountState;
@@ -46,7 +48,7 @@ public class ConnectionActivity extends Activity implements View.OnClickListener
     //private TextView mTextModelAvailable;
     //private TextView mVersionTv;
 
-    private Button mBtnOpen;
+    private Button mBtnOpen, mUnityBtn;
     private static final String[] REQUIRED_PERMISSION_LIST = new String[]{
             Manifest.permission.VIBRATE,
             Manifest.permission.INTERNET,
@@ -200,6 +202,9 @@ public class ConnectionActivity extends Activity implements View.OnClickListener
         mBtnOpen.setOnClickListener(this);
         mBtnOpen.setEnabled(false);
 
+        mUnityBtn = (Button) findViewById(R.id.unity_btn);
+        mUnityBtn.setOnClickListener(this);
+
     }
 
     protected BroadcastReceiver mReceiver = new BroadcastReceiver() {
@@ -261,6 +266,11 @@ public class ConnectionActivity extends Activity implements View.OnClickListener
 
             case R.id.btn_open: {
                 Intent intent = new Intent(this, DefaultLayoutActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case R.id.unity_btn: {
+                Intent intent = new Intent(this, UnityPlayerActivity.class);
                 startActivity(intent);
                 break;
             }
