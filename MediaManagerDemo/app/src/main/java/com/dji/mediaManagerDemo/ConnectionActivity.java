@@ -6,9 +6,15 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
+import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.os.Bundle;
@@ -19,6 +25,16 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.facebook.CallbackManager;
+import com.facebook.FacebookCallback;
+import com.facebook.FacebookException;
+import com.facebook.share.Sharer;
+import com.facebook.share.model.SharePhoto;
+import com.facebook.share.model.SharePhotoContent;
+import com.facebook.share.model.ShareVideo;
+import com.facebook.share.model.ShareVideoContent;
+import com.facebook.share.widget.ShareDialog;
 
 import dji.common.error.DJIError;
 import dji.common.error.DJISDKError;
@@ -33,6 +49,8 @@ import dji.sdk.base.BaseProduct;
 import dji.sdk.products.Aircraft;
 import dji.sdk.sdkmanager.DJISDKManager;
 import dji.sdk.useraccount.UserAccountManager;
+
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicBoolean;
@@ -47,6 +65,14 @@ public class ConnectionActivity extends Activity implements View.OnClickListener
     private TextView mVersionTv;
     private Button mBtnOpen;
     private Button mBtnMenu;
+    private Button mBtnShare;
+
+    /*FaceBook Share*/
+    public String selectedImagePath; //圖片檔案位置
+    private int SELECT_FILE =0;
+    private CallbackManager callbackManager;
+    private ShareDialog shareDialog;
+    /*FaceBook Share End*/
 
     private static final String[] REQUIRED_PERMISSION_LIST = new String[]{
         Manifest.permission.VIBRATE,
@@ -83,6 +109,43 @@ public class ConnectionActivity extends Activity implements View.OnClickListener
         filter.addAction(DemoApplication.FLAG_CONNECTION_CHANGE);
         registerReceiver(mReceiver, filter);
 
+
+        /*FaceBook Share*/
+        initFacebook();
+
+        mBtnShare = (Button) findViewById(R.id.btn_Share);
+        mBtnShare.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                selectImage();
+            }
+        });
+
+
+        /*API 23以上權限申請*/
+        if (Build.VERSION.SDK_INT >= 23) {
+            int REQUEST_CODE_CONTACT = 101;
+            String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE};
+            //驗證是否認證權限
+            for (String str : permissions) {
+                if (this.checkSelfPermission(str) != PackageManager.PERMISSION_GRANTED) {
+                    //申請權限
+                    this.requestPermissions(permissions, REQUEST_CODE_CONTACT);
+                    return;
+                }
+            }
+        }
+
+        try {
+            SharedPreferences preferencesGet = getApplicationContext()
+                    .getSharedPreferences("image", android.content.Context.MODE_PRIVATE);
+            selectedImagePath = preferencesGet.getString("selectedImagePath",
+                    ""); // 圖片檔案位置，預設為空
+
+            Log.i("selectedImagePath", selectedImagePath + "");
+
+        } catch (Exception e) {
+        }
+        /*FaceBook Share End*/
     }
 
     /**
@@ -356,4 +419,73 @@ public class ConnectionActivity extends Activity implements View.OnClickListener
         hasStartedFirmVersionListener = false;
     }
 
+
+    /*FaceBook Share*/
+    private void initFacebook() {
+        callbackManager = CallbackManager.Factory.create();
+        shareDialog = new ShareDialog(this);
+        // this part is optional
+        shareDialog.registerCallback(callbackManager, new FacebookCallback<Sharer.Result>() {
+
+            @Override
+            public void onSuccess(Sharer.Result result) {
+            }
+
+            @Override
+            public void onCancel() {
+            }
+
+            @Override
+            public void onError(FacebookException error) {
+            }
+        });
+    }
+
+    @Override @SuppressWarnings("deprecation")
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        //facebook的界面回调
+        callbackManager.onActivityResult(requestCode, resultCode, data);
+
+        //選擇開啟方式
+        if (requestCode == SELECT_FILE && resultCode == RESULT_OK && null != data) {
+            Uri selectedMediaUri = data.getData();
+            if (selectedMediaUri.toString().contains("image")) {
+                String[] projection = { MediaStore.Images.Media.DATA };
+                Cursor cursor = managedQuery(selectedMediaUri, projection, null, null, null);
+                int column_index = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
+                cursor.moveToFirst();
+                selectedImagePath = cursor.getString(column_index);
+
+                if (ShareDialog.canShow(SharePhotoContent.class)) {
+                    Bitmap image2 = BitmapFactory.decodeFile(selectedImagePath);
+                    SharePhoto photo = new SharePhoto.Builder().setBitmap(image2).build();
+                    SharePhotoContent contentPhoto = new SharePhotoContent.Builder().addPhoto(photo).build();
+                    shareDialog.show(contentPhoto);
+                }
+            } else  if (selectedMediaUri.toString().contains("video")) {
+                String[] projection = { MediaStore.Video.Media.DATA };
+                Cursor cursor = managedQuery(selectedMediaUri, projection, null, null, null);
+                int column_index = cursor.getColumnIndexOrThrow(MediaStore.Video.Media.DATA);
+                cursor.moveToFirst();
+                selectedImagePath = cursor.getString(column_index);
+
+                if (ShareDialog.canShow(ShareVideoContent.class)) {
+                    File file = new File(selectedImagePath);
+                    Uri videoFileUri = Uri.fromFile(file);
+                    ShareVideo ShareVideo = new ShareVideo.Builder().setLocalUrl(videoFileUri).build();
+                    ShareVideoContent contentVideo = new ShareVideoContent.Builder().setVideo(ShareVideo).build();
+                    shareDialog.show(contentVideo);
+                }
+            }
+        }
+    }
+
+
+    private void selectImage() {
+        Intent intent1 = new Intent(Intent.ACTION_PICK, android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        intent1.setType("image/* video/*");
+        startActivityForResult(Intent.createChooser(intent1, "選擇開啟圖庫"), SELECT_FILE);
+    }
+    /*FaceBook Share End*/
 }

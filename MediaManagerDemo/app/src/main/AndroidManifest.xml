@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.dji.mediaManagerDemo">
+    package="com.dji.mediaManagerDemo"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <!-- FaceBook Permissions -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="27" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" ></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" ></uses-permission>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission> <!--允許錄音錄影的授權-->
+    <uses-permission android:name="android.permission.RECORD_VIDEO"/>
+    <uses-feature android:name="android.hardware.camera" />
 
     <!-- Permissions and features -->
     <uses-permission android:name="android.permission.BLUETOOTH" />
@@ -39,6 +52,29 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:icon">
+
+        <!--FACEBOOK分享-->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider482144415571339"
+            android:exported="true" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="fb482144415571339" />
+            </intent-filter>
+        </activity>
+
 
         <!-- DJI SDK -->
         <uses-library android:name="com.android.future.usb.accessory" />
