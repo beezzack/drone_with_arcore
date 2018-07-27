@@ -103,7 +103,7 @@
             android:text="Equipment" />
 
         <Button
-            android:id="@+id/btn_Share"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:drawableTop="@drawable/facebook"
