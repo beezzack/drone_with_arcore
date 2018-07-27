@@ -66,7 +66,6 @@
         android:textSize="20dp"
         tools:background="#FCBCB8" />
 
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -79,50 +78,5 @@
         android:textColor="#ecc8c8"
         android:textSize="30sp"
         android:textStyle="bold" />
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:orientation="vertical">
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/btn_menu"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/gradient"
-            android:drawableTop="@drawable/propeller1"
-            android:text="Equipment" />
-
-        <Button
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableTop="@drawable/facebook"
-            android:layout_weight="1"
-            android:background="@drawable/gradient"
-            android:focusable="false"
-            android:text="Share" />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableTop="@drawable/spark"
-            android:layout_weight="1"
-            android:background="@drawable/gradient"
-            android:focusable="false"
-            android:text="Rent" />
-
-
-
-</LinearLayout>
 
 </RelativeLayout>

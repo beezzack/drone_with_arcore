@@ -45,22 +45,19 @@
 
         <meta-data
             android:name="com.dji.sdk.API_KEY"
-            android:value="cb96f3b6caf32ccde71691ac" />
+            android:value="62cbaff9b5a4ba5fb3eb0d00" />
 
         <!-- DJI SDK -->
-        <activity android:name=".Splash">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity
             android:name=".ConnectionActivity"
             android:configChanges="orientation"
             android:launchMode="singleTop"
             android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
             <intent-filter>
                 <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" />
             </intent-filter>
@@ -69,13 +66,12 @@
                 android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"
                 android:resource="@xml/accessory_filter" />
         </activity>
-        <activity
-            android:name=".DefaultLayoutActivity"
+        <activity android:name=".DefaultLayoutActivity"
             android:configChanges="orientation"
-            android:screenOrientation="landscape" />
+            android:screenOrientation="landscape"></activity>
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="landscape" />
+            android:screenOrientation="landscape"></activity>
 
     </application>
 
