@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
+    compileSdkVersion 27
     buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId "com.dji.mediaManagerDemo"
         minSdkVersion 19
-        targetSdkVersion 25
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -51,5 +51,6 @@ dependencies {
 
     implementation 'com.dji:dji-uxsdk:4.5.1'
     compileOnly('com.dji:dji-sdk-provided:4.5.1')
+
 
 }
