@@ -95,10 +95,10 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btn_facebook"
+            android:id="@+id/btn_Share"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:drawableTop="@drawable/facebook"
+            android:drawableTop="@drawable/share"
             android:layout_weight="1"
             android:background="@drawable/gradient"
             android:focusable="false"
