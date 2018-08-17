@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
+import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.support.annotation.NonNull;
@@ -297,7 +298,10 @@ public class ConnectionActivity extends Activity implements View.OnClickListener
             mBtnOpen.setEnabled(true);
 
             String str = mProduct instanceof Aircraft ? "DJIAircraft" : "DJIHandHeld";
-            mTextConnectionStatus.setText("Status: " + str + " connected");
+            mTextConnectionStatus.setText( str + " connected");
+            Drawable WifiImage = getResources().getDrawable(R.drawable.ic_wifi_24dp);
+            WifiImage.setBounds(1, 1, 100, 100);
+            mTextConnectionStatus.setCompoundDrawables(WifiImage,null,null,null);
             tryUpdateFirmwareVersionWithListener();
 
             if (null != mProduct.getModel()) {
@@ -314,6 +318,9 @@ public class ConnectionActivity extends Activity implements View.OnClickListener
 
             mTextProduct.setText(R.string.product_information);
             mTextConnectionStatus.setText(R.string.connection_loose);
+            Drawable NoWifiImage = getResources().getDrawable(R.drawable.ic_signal_wifi_off_24dp);
+            NoWifiImage.setBounds(1, 1, 100, 100);
+            mTextConnectionStatus.setCompoundDrawables(NoWifiImage,null,null,null);
         }
     }
 
