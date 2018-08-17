@@ -50,6 +50,10 @@ WorldScaleAR/.idea/
 # External native build folder generated in Android Studio 2.2 and later
 .externalNativeBuild
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> e4faaf3ae3447dc20fd764c4ae76031b9abf913d
 # Freeline
 freeline.py
 freeline/
