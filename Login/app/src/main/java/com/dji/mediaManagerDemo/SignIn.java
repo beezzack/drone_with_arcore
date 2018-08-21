@@ -60,7 +60,7 @@ public class SignIn extends AppCompatActivity {
                             if (user.getPassword().equals(edtPassword.getText().toString())) {
                                 Toast.makeText(SignIn.this, "Sign in successfully !", Toast.LENGTH_SHORT).show();
 
-                                Intent intent = new Intent(SignIn.this, ConnectionActivity.class);
+                                Intent intent = new Intent(SignIn.this, Teach.class);
                                 startActivity(intent);
 
                             } else {

@@ -74,13 +74,9 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btn_facebook"
+            android:id="@+id/btn_share"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-<<<<<<< HEAD
-=======
-            android:drawableTop="@drawable/facebook"
->>>>>>> e4faaf3ae3447dc20fd764c4ae76031b9abf913d
             android:layout_weight="1"
             android:background="#39796b"
             android:focusable="false"

@@ -89,6 +89,9 @@
         <activity android:name=".LoginActivity" />
         <activity android:name=".SignUp" />
         <activity android:name=".SignIn" />
+        <activity android:name=".Teach" />
+        <activity android:name=".ImageModel" />
+        <activity android:name=".SlidingImage_Adapter"></activity>
     </application>
 
 </manifest>
