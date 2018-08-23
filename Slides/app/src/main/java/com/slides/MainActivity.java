@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
         mSliderViewPager=(ViewPager) findViewById(R.id.slideViewPager);
         mDotLayout = (LinearLayout) findViewById(R.id.dotsLayout);
 
-        mNextBtn = (Button) findViewById(R.id.prevBtn);
-        mBackBtn = (Button) findViewById(R.id.nextBtn);
+        mNextBtn = (Button) findViewById(R.id.nextBtn);
+        mBackBtn = (Button) findViewById(R.id.prevBtn);
 
 
         sliderAdaptator = new SliderAdaptator(this);
