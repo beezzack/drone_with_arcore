@@ -17,6 +17,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.MediaController;
 import android.widget.SlidingDrawer;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -663,6 +664,16 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
             }
             case R.id.download_btn: {
+                mMediaManager.stop(new CommonCallbacks.CompletionCallback() {
+                    @Override
+                    public void onResult(DJIError error) {
+                        if (null != error) {
+                            setResultToToast("DownlLoad Stop Video Failed" + error.getDescription());
+                        } else {
+                            DJILog.e(TAG, "DownlLoad Stop Video Success");
+                        }
+                    }
+                });
                 downloadFileByIndex(lastClickViewIndex);
                 break;
             }
@@ -675,6 +686,16 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
             }
             case R.id.play_btn: {
+                mMediaManager.stop(new CommonCallbacks.CompletionCallback() {
+                    @Override
+                    public void onResult(DJIError error) {
+                        if (null != error) {
+                            setResultToToast("Play Stop Video Failed" + error.getDescription());
+                        } else {
+                            DJILog.e(TAG, "Play Stop Video Success");
+                        }
+                    }
+                });
                 playVideo();
                 break;
             }
