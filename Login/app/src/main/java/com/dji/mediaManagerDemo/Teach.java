@@ -1,54 +1,81 @@
 package com.dji.mediaManagerDemo;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.os.Handler;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Html;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
-import com.viewpagerindicator.CirclePageIndicator;
-
-import java.util.ArrayList;
-import java.util.Timer;
-import java.util.TimerTask;
+import dji.midware.data.model.P3.DataFlycUploadWayPointMissionMsg;
 
 public class Teach extends AppCompatActivity {
 
-
-    private static ViewPager mPager;
-    private static int currentPage = 0;
-    private static int NUM_PAGES = 0;
-    private ArrayList<ImageModel> imageModelArrayList;
-
-    private int[] myImageList = new int[]{R.drawable.harley2, R.drawable.benz2,
-            R.drawable.vecto, R.drawable.webshots
-            , R.drawable.bikess, R.drawable.img1};
-
-    private SharedPreferences mSharedPreferences;
+    private ViewPager mSliderViewPager;
+    private LinearLayout mDotLayout;
+    private TextView[] mDots;
+   // private SliderAdaptator sliderAdaptator;
+    private Button mNextBtn;
+    private Button mBackBtn;
+    private int myCurrentPage;
     private boolean firstOpenApp = true;
+    private SharedPreferences mSharedPreferences;
     private static final String DATA = "DATA";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_teach);
+        setContentView(R.layout.activity_teach2);
+
         mSharedPreferences = getSharedPreferences(DATA, MODE_PRIVATE);
         readData();
         CheckFirstIn();
 
-        imageModelArrayList = new ArrayList<>();
-        imageModelArrayList = populateList();
 
-        init();
+        mSliderViewPager=(ViewPager) findViewById(R.id.slideViewPager);
+        mDotLayout = (LinearLayout) findViewById(R.id.dotsLayout);
+
+        mNextBtn = (Button) findViewById(R.id.nextBtn);
+        mBackBtn = (Button) findViewById(R.id.prevBtn);
 
 
+       // sliderAdaptator = new SliderAdaptator(this);
+        //mSliderViewPager.setAdapter(sliderAdaptator);
+
+        addDotsIndicator(0);
+        mSliderViewPager.addOnPageChangeListener(viewListener);
+
+        //onclicklistener
+
+        mNextBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(myCurrentPage==2){
+                    Intent intent = new Intent(Teach.this,ConnectionActivity.class);
+                    startActivity(intent);
+                }else{
+                    mSliderViewPager.setCurrentItem(myCurrentPage + 1);
+                }
+            }
+        });
+
+        mBackBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                mSliderViewPager.setCurrentItem(myCurrentPage - 1);
+            }
+        });
     }
-
     private void readData() {//讀取
         firstOpenApp = mSharedPreferences.getBoolean("Open", firstOpenApp);
     }
@@ -58,7 +85,6 @@ public class Teach extends AppCompatActivity {
                 .putBoolean("Open", false)
                 .apply();
     }
-
     private void CheckFirstIn() {
         if (firstOpenApp) {
             new AlertDialog.Builder(this)
@@ -70,83 +96,78 @@ public class Teach extends AppCompatActivity {
                         }
                     }).show();
             firstOpenApp = false;
-        } else if (firstOpenApp == false) {
+        }
+        else if (firstOpenApp == false){
             Intent intent = new Intent(this, ConnectionActivity.class);
             startActivity(intent);
         }
     }
+    public void addDotsIndicator(int position){
+        mDots = new TextView[3];
 
-    private ArrayList<ImageModel> populateList() {
+        for(int i= 0; i<mDots.length; i++){
+            mDots[i]= new TextView(this);
+            mDots[i].setText(Html.fromHtml("&#8226;"));
+            mDots[i].setTextSize(35);
+            mDots[i].setTextColor(getResources().getColor(R.color.colorWhite));
+        }
 
-        ArrayList<ImageModel> list = new ArrayList<>();
+        if(mDots.length>0){
+            mDots[position].setTextColor(getResources().getColor(R.color.colorWhite));
+        }
+    }
 
-        for (int i = 0; i < 6; i++) {
-            ImageModel imageModel = new ImageModel();
-            imageModel.setImage_drawable(myImageList[i]);
-            list.add(imageModel);
+    ViewPager.OnPageChangeListener viewListener = new ViewPager.OnPageChangeListener() {
+        @Override
+        public void onPageScrolled(int i, float v, int i1) {
+
+        }
+
+        @Override
+        public void onPageSelected(int i) {
+
+            addDotsIndicator(i);
+            myCurrentPage = i;
+
+            if(i==0){
+
+                mNextBtn.setEnabled(true);
+                mBackBtn.setEnabled(true);
+                mBackBtn.setVisibility(View.INVISIBLE);
+
+                mNextBtn.setText("Next");
+                mBackBtn.setText("");
+
+            } else if (i == mDots.length-1) {
+                mNextBtn.setEnabled(true);
+                mBackBtn.setEnabled(true);
+                mBackBtn.setVisibility(View.VISIBLE);
+
+                mNextBtn.setText("Finish");
+
+                mBackBtn.setText("Back");
+            } else {
+                mNextBtn.setEnabled(true);
+                mBackBtn.setEnabled(true);
+                mBackBtn.setVisibility(View.VISIBLE);
+
+                mNextBtn.setText("Next");
+                mBackBtn.setText("Back");
+            }
+
         }
 
 
-        return list;
-    }
 
-    private void init() {
+        @Override
+        public void onPageScrollStateChanged(int i) {
 
-        mPager = (ViewPager) findViewById(R.id.pager);
-        mPager.setAdapter(new SlidingImage_Adapter(Teach.this, imageModelArrayList));
+        }
 
-        CirclePageIndicator indicator = (CirclePageIndicator)
-                findViewById(R.id.indicator);
-
-        indicator.setViewPager(mPager);
-
-
-        final float density = getResources().getDisplayMetrics().density;
-
-//Set circle indicator radius
-        indicator.setRadius(5 * density);
-
-        NUM_PAGES = imageModelArrayList.size();
-
-        // Auto start of viewpager
-        final Handler handler = new Handler();
-        final Runnable Update = new Runnable() {
-            public void run() {
-                if (currentPage == NUM_PAGES) {
-                    currentPage = 0;
-                }
-                mPager.setCurrentItem(currentPage++, true);
-            }
-        };
-
-
-        // Pager listener over indicator
-        indicator.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-
-            @Override
-            public void onPageSelected(int position) {
-                currentPage = position;
-
-            }
-
-            @Override
-            public void onPageScrolled(int pos, float arg1, int arg2) {
-
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int pos) {
-
-            }
-        });
-
-    }
-
+    };
     @Override
     protected void onPause() {//在onPause內儲存
         super.onPause();
         saveData();
     }
-
-
 }
