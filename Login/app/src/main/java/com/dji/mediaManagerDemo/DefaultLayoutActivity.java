@@ -22,7 +22,6 @@ public class DefaultLayoutActivity extends AppCompatActivity implements View.OnC
 
     @Override
     public void onClick(View v) {
-
         switch (v.getId()) {
             case R.id.btn_mediaManager: {
                 Intent intent = new Intent(this, MainActivity.class);

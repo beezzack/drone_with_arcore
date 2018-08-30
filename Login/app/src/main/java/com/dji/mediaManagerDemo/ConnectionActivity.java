@@ -44,8 +44,6 @@ public class ConnectionActivity extends Activity implements View.OnClickListener
 
     private TextView mTextConnectionStatus;
     private TextView mTextProduct;
-    //private TextView mTextModelAvailable;
-    //private TextView mVersionTv;
 
     private Button mBtnOpen;
     private Button mBtnShare;
@@ -102,7 +100,6 @@ public class ConnectionActivity extends Activity implements View.OnClickListener
                     missingPermission.toArray(new String[missingPermission.size()]),
                     REQUEST_PERMISSION_CODE);
         }
-
     }
 
     /**
@@ -193,22 +190,14 @@ public class ConnectionActivity extends Activity implements View.OnClickListener
     private void initUI() {
 
         mTextConnectionStatus = (TextView) findViewById(R.id.text_connection_status);
-        //mTextModelAvailable = (TextView) findViewById(R.id.text_model_available);
         mTextProduct = (TextView) findViewById(R.id.text_product_info);
-
-        //mVersionTv = (TextView) findViewById(R.id.textView2);
-        //.setText(getResources().getString(R.string.sdk_version, DJISDKManager.getInstance().getSDKVersion()));
 
         mBtnOpen = (Button) findViewById(R.id.btn_open);
         mBtnOpen.setOnClickListener(this);
-        //mBtnOpen.setEnabled(false);
         mBtnShare= (Button) findViewById(R.id.btn_share);
         mBtnShare.setOnClickListener(this);
-        //mBtnShare.setEnabled(false);
         mBtnRent = (Button) findViewById(R.id.btn_rent);
         mBtnRent.setOnClickListener(this);
-        //mBtnRent.setEnabled(false);
-
     }
 
     protected BroadcastReceiver mReceiver = new BroadcastReceiver() {
@@ -232,7 +221,7 @@ public class ConnectionActivity extends Activity implements View.OnClickListener
                     Aircraft aircraft = (Aircraft)product;
                     if(aircraft.getRemoteController() != null && aircraft.getRemoteController().isConnected()) {
                         // The product is not connected, but the remote controller is connected
-                        showToast("only RC Connected");
+                        showToast("only Remote Controller Connected");
                         ret = true;
                     }
                 }
@@ -280,9 +269,6 @@ public class ConnectionActivity extends Activity implements View.OnClickListener
                 startActivity(Intent.createChooser(myIntent, "Share using"));
                 break;
             }
-
-
-
             case R.id.btn_rent: {
                 Intent intent = new Intent(this, MapsActivity.class);
                 startActivity(intent);
@@ -313,8 +299,6 @@ public class ConnectionActivity extends Activity implements View.OnClickListener
                 mTextProduct.setText(R.string.product_information);
             }
 
-           // loginAccount();
-
         } else {
             Log.v(TAG, "refreshSDK: False");
             mBtnOpen.setEnabled(false);
@@ -326,22 +310,6 @@ public class ConnectionActivity extends Activity implements View.OnClickListener
             mTextConnectionStatus.setCompoundDrawables(NoWifiImage,null,null,null);
         }
     }
-
- /*  private void loginAccount(){
-        UserAccountManager.getInstance().logIntoDJIUserAccount(this,
-                new CommonCallbacks.CompletionCallbackWith<UserAccountState>() {
-                    @Override
-                    public void onSuccess(final UserAccountState userAccountState) {
-                        Log.e(TAG, "Login Success");
-                        showToast("Login Success!");
-                    }
-                    @Override
-                    public void onFailure(DJIError error) {
-                        showToast("Login Error:"
-                                + error.getDescription());
-                    }
-                });
-    }*/
 
     private void tryUpdateFirmwareVersionWithListener() {
         if (!hasStartedFirmVersionListener) {
@@ -372,5 +340,4 @@ public class ConnectionActivity extends Activity implements View.OnClickListener
         }
         hasStartedFirmVersionListener = false;
     }
-
 }

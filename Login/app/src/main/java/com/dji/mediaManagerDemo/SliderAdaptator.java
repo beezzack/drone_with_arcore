@@ -21,21 +21,21 @@ public class SliderAdaptator extends PagerAdapter{
 
     //Arrays
     public int[] slide_images={
-            R.drawable.bikess,R.drawable.harley2,R.drawable.benz2
+            R.drawable.functions,R.drawable.connect1,R.drawable.connect2
     };
 
     public String[] slide_headings = {
 
-            "hi",
-            "hello",
-            "ya"
+            "",
+            "",
+            ""
     };
 
     public String[] slide_descs = {
 
-            "hi",
-            "hello",
-            "ya"
+            "",
+            "",
+            ""
     };
     @Override
     public int getCount() {

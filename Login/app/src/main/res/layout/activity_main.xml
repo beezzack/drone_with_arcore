@@ -114,8 +114,6 @@
         android:text="Status"
         android:textSize="11sp" />
 
-
-
     <!-- Widget to see first person view (FPV) -->
     <dji.ux.widget.FPVWidget
         android:layout_width="match_parent"

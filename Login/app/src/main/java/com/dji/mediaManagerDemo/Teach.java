@@ -22,7 +22,7 @@ public class Teach extends AppCompatActivity {
     private ViewPager mSliderViewPager;
     private LinearLayout mDotLayout;
     private TextView[] mDots;
-   // private SliderAdaptator sliderAdaptator;
+    private SliderAdaptator sliderAdaptator;
     private Button mNextBtn;
     private Button mBackBtn;
     private int myCurrentPage;
@@ -48,8 +48,8 @@ public class Teach extends AppCompatActivity {
         mBackBtn = (Button) findViewById(R.id.prevBtn);
 
 
-       // sliderAdaptator = new SliderAdaptator(this);
-        //mSliderViewPager.setAdapter(sliderAdaptator);
+        sliderAdaptator = new SliderAdaptator(this);
+        mSliderViewPager.setAdapter(sliderAdaptator);
 
         addDotsIndicator(0);
         mSliderViewPager.addOnPageChangeListener(viewListener);
